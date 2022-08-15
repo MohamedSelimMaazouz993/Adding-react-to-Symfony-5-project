@@ -1,22 +1,7 @@
-import './styles/app.css';
-import './bootstrap';
-import Naavbar from './components/Naavbar'
- 
-
-
-
-const App = () => {
-  return (
-    <>    
-      <Naavbar/>
-    <main className='py-3'>
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
+import '../assets/styles/app.css';
+import Home from './components/Home';
     
-    </main>
-    <Footer/>
-    </>
-
-  )
-}
-
-
-export default App;
+ReactDOM.render(<Router><Home /></Router>, document.getElementById('root'));
